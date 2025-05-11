@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Activity Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Activity Tracker</h1>
+  <p>Tracking your clicks, scrolls, keyboard, and active windows in the background.</p>
+  <p>Logs are saved in: <span id="logPath"></span></p>
+  <script>
+    const { app } = require('electron').remote;
+    document.getElementById('logPath').textContent = app.getPath('userData') + '/activity_log.json';
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "activity-tracker",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^31.0.0",
+    "node-window-manager": "^2.2.4",
+    "iohook": "^0.9.3"
+  }
+}
